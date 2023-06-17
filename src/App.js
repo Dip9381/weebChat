@@ -17,12 +17,12 @@ function App() {
   }
   return (
     <>
-    <HashRouter basename="/weebChat">
+    <HashRouter>
     <Routes>
       <Route path="/home" element={<Securelogout>
         <Home />
       </Securelogout>}></Route>
-      <Route exact path="/weebChat" element={<Login/>}></Route>
+      <Route path="/" element={<Login/>}></Route>
       <Route path="/register" element={<Register/>}></Route>
     </Routes>
     </HashRouter>
