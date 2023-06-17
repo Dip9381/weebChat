@@ -17,7 +17,7 @@ function App() {
   }
   return (
     <>
-    <HashRouter basename="http://dip9381.github.io/weebChat/">
+    <HashRouter basename="/weebChat">
     <Routes>
       <Route path="/home" element={<Securelogout>
         <Home />
