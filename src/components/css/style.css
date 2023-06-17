@@ -1,0 +1,289 @@
+.bg {
+  background-color: rgb(66, 187, 231);
+  width: 100vw;
+  height: 100vh;
+}
+.bg .box {
+  background-color: white;
+  width: 25%;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 10px;
+  top: 25vh;
+}
+.bg .box form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+}
+.bg .box form input {
+  width: 60%;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.bg .box form input:focus {
+  outline: none;
+  border-bottom: 1px solid rgb(79, 255, 63);
+}
+.bg .box form #file {
+  display: none;
+}
+.bg .box form button {
+  padding: 5px;
+  cursor: pointer;
+}
+.bg .box form p a {
+  text-decoration: none;
+  color: rgb(0, 162, 255);
+  font-size: 1.1em;
+  font-weight: 500;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.bg .box form p a:hover {
+  color: aquamarine;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.home-bg {
+  background-color: rgb(66, 187, 231);
+  height: 100vh;
+  width: 100vw;
+}
+.home-bg .chat-window-bg {
+  display: flex;
+  background-color: white;
+  width: 60%;
+  height: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 10%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.home-bg .chat-window-bg #sidebar {
+  width: 40%;
+  background-color: rgb(242, 242, 242);
+}
+.home-bg .chat-window-bg #chat {
+  width: 60%;
+}
+
+#navbar {
+  height: 10%;
+  background-color: rgb(196, 196, 196);
+  display: flex;
+}
+#navbar div {
+  padding: 8px;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+#navbar img {
+  border-radius: 100px;
+  aspect-ratio: 1/1;
+  border: 1px solid black;
+}
+#navbar input {
+  height: 6%;
+  position: absolute;
+  right: 62%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  top: 1%;
+  font-weight: 600;
+  cursor: pointer;
+}
+#navbar input:hover {
+  background-color: rgb(65, 65, 65);
+  color: white;
+}
+
+#search {
+  width: 100%;
+  height: 7%;
+  border: none;
+  font-size: 1.1em;
+}
+#search:focus {
+  outline: none;
+}
+
+.chats::-webkit-scrollbar {
+  display: none;
+}
+
+.chats {
+  width: 100%;
+  overflow: scroll;
+  height: 100%;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.chats > div {
+  display: flex;
+  background-color: rgba(95, 95, 95, 0.436);
+  border-bottom: 1px solid rgba(78, 78, 78, 0.436);
+  cursor: pointer;
+}
+.chats > div img {
+  width: 18%;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  padding: 10px;
+}
+.chats > div > div {
+  padding-top: 20px;
+}
+.chats > div > div .chatName {
+  font-size: 1.1em;
+  font-weight: 45 0;
+}
+.chats > div > div p {
+  color: rgba(0, 0, 0, 0.779);
+}
+.chats > div:hover {
+  background-color: rgba(173, 172, 172, 0.436);
+}
+
+.searchchats::-webkit-scrollbar {
+  display: none;
+}
+
+.searchchats {
+  width: 100%;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.searchchats > div {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.403);
+  display: flex;
+  background-color: rgba(182, 182, 182, 0.3);
+  cursor: pointer;
+  height: 20%;
+}
+.searchchats > div img {
+  width: 18%;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  padding: 10px;
+}
+.searchchats > div > div {
+  padding-top: 20px;
+}
+.searchchats > div > div .chatName {
+  font-size: 1.1em;
+  font-weight: 45 0;
+}
+.searchchats > div > div p {
+  color: rgba(0, 0, 0, 0.779);
+}
+.searchchats > div:hover {
+  background-color: rgba(199, 198, 198, 0.7);
+}
+.searchchats > div:last-child {
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+#chat {
+  height: 100%;
+  width: 60%;
+  background-color: rgb(241, 238, 238);
+}
+
+#messages {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: scroll;
+}
+
+#input {
+  height: 10%;
+  width: 100%;
+  border-top: 1px solid black;
+}
+#input button {
+  background-color: green;
+  border: none;
+  padding: 10px;
+  margin-left: 2%;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+#input button:hover {
+  background-color: white;
+  color: green;
+  border: 1px green solid;
+  cursor: pointer;
+}
+#input #chatText {
+  border: none;
+  height: 100%;
+  width: 75%;
+  border-right: 1px solid black;
+  font-size: 1.4em;
+}
+#input #chatText:focus {
+  outline: none;
+}
+#input #attach {
+  display: none;
+  margin-left: 5%;
+  cursor: pointer;
+}
+#input .attach-logo {
+  cursor: pointer;
+  color: black;
+  padding: 3%;
+}
+
+.message {
+  display: flex;
+}
+.message > div:nth-child(1) {
+  display: flex;
+  padding: 5px;
+  width: 30%;
+}
+.message > div:nth-child(1) img {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  width: 50px;
+  height: 50px;
+}
+.message > div:nth-child(1) p {
+  padding-top: 15%;
+}
+.message > div:nth-child(2) {
+  background-color: rgb(212, 211, 211);
+  width: 60%;
+  padding: 10px;
+  border-radius: 10px;
+}
+.message > div:nth-child(2):hover {
+  background-color: rgb(186, 184, 184);
+}
+.message.owner {
+  flex-direction: row-reverse;
+}
+.message.owner > div:nth-child(1) {
+  display: flex;
+  flex-direction: row-reverse;
+}/*# sourceMappingURL=style.css.map */
