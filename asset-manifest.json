@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/weebChat/static/css/main.eab79d7b.css",
-    "main.js": "/weebChat/static/js/main.59ff5f6f.js",
+    "main.js": "/weebChat/static/js/main.94e4fb1d.js",
     "static/js/988.c8ee0a58.chunk.js": "/weebChat/static/js/988.c8ee0a58.chunk.js",
     "index.html": "/weebChat/index.html",
     "main.eab79d7b.css.map": "/weebChat/static/css/main.eab79d7b.css.map",
-    "main.59ff5f6f.js.map": "/weebChat/static/js/main.59ff5f6f.js.map",
+    "main.94e4fb1d.js.map": "/weebChat/static/js/main.94e4fb1d.js.map",
     "988.c8ee0a58.chunk.js.map": "/weebChat/static/js/988.c8ee0a58.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eab79d7b.css",
-    "static/js/main.59ff5f6f.js"
+    "static/js/main.94e4fb1d.js"
   ]
 }
