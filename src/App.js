@@ -9,7 +9,7 @@ function App() {
   const {curruser}=useContext(AuthContext);
   const Securelogout =({children})=>{
     if(!curruser){
-     return <Navigate to='/'/>
+     return <Navigate to='/weebChat'/>
     }
     else{
     return  children;
